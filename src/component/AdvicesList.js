@@ -4,7 +4,7 @@ class AdvicesList extends Component{
     render(){
         return (
             <div>
-               <h1>advice</h1>
+              <h1>Advices List</h1>
                <ul>
                    {data.map(data=>(
                        <div>
