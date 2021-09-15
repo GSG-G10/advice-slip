@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import AdvicesList from '../src/component/AdvicesList'
+import CategoryAdvices from '../src/component/CategoryAdvices'
+import GetAdviseApi from './utils/GetAdvise'
+
 import './component/Style.css'
 import data from "./data";
 
@@ -12,38 +15,21 @@ class  App extends Component {
       data:data
     }
   }
+  CategoryChangeData = event => {
+    GetAdviseApi(event.target.value).then(res => this.setState({ data:res.slips}))
+  }
+
+  
   render(){
     return (
       <main>
       <section className="filters">
         <h3>Search</h3>
         <input/>
-       <div className="categosries">
-        <form className="categories">
-        <h2 className="category">Categories</h2>
-       <label>Work
-              <input
-            type='radio'
-            name='categories' // name groups the inputs
-             />
-             </label>
-               <label>Time
-             <input
-            type='radio'
-            name='categories' // name groups the inputs
-             />
-             </label>
-               <label>spiders
-             <input
-            type='radio'
-            name='categories' // name groups the inputs
-             />
-             </label>
-        </form>
-        </div>
+        <CategoryAdvices CategoryChangeData={this.CategoryChangeData}/>
       </section>
       <section className="device">
-          <AdvicesList data={this.state.data}/>
+          <AdvicesList data={this.state.data} />
       </section>
     </main>
  
