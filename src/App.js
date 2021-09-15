@@ -1,16 +1,21 @@
 import React, { Component } from "react";
-import   AdvicesList from '../src/component/AdvicesList'
+import AdvicesList from '../src/component/AdvicesList'
+import './component/Style.css'
+import data from "./data";
+
 // import GetAdvise from "./utils/GetAdvise";
 class  App extends Component {
   // eslint-disable-next-line no-useless-constructor
   constructor(){
     super()
-  
+    this.state = {
+      data:data
+    }
   }
   render(){
     return (
       <main>
-      {/* <section className="filters">
+      <section className="filters">
         <h3>Search</h3>
         <input/>
        <div className="categosries">
@@ -36,9 +41,9 @@ class  App extends Component {
              </label>
         </form>
         </div>
-      </section> */}
+      </section>
       <section className="device">
-          <AdvicesList />
+          <AdvicesList data={this.state.data}/>
       </section>
     </main>
  
