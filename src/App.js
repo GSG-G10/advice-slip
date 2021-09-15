@@ -28,7 +28,7 @@ class  App extends Component {
     return (
       <main>
       <section className="filters">
-       
+       <h2>Advices List</h2>
         <SearchAdvice handleInputSearch={this.handleInputSearch} />
         <CategoryAdvices CategoryChangeData={this.CategoryChangeData}/>
       </section>
