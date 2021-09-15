@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import data from "../data";
 class AdvicesList extends Component{
     render(){
         return (
             <div>
               <h1>Advices List</h1>
                <ul>
-                   {data.map(data=>(
-                       <div>
+                   {this.props.data.map(data=>(
+                       <div className='card'>
                        <li>{data.advice}</li>
                        <li>{data.category}</li>
                        <li>{data.date}</li>
