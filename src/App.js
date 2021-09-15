@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import AdvicesList from '../src/component/AdvicesList'
 import CategoryAdvices from '../src/component/CategoryAdvices'
 import GetAdviseApi from './utils/GetAdvise'
-
+import SearchAdvice from "./component/SearchAdvice";
 import './component/Style.css'
 import data from "./data";
 
@@ -19,13 +19,17 @@ class  App extends Component {
     GetAdviseApi(event.target.value).then(res => this.setState({ data:res.slips}))
   }
 
-  
+  handleInputSearch = (word) =>{
+
+    GetAdviseApi(word).then(res => this.setState({ data:res.slips}))
+   
+  }
   render(){
     return (
       <main>
       <section className="filters">
-        <h3>Search</h3>
-        <input/>
+       
+        <SearchAdvice handleInputSearch={this.handleInputSearch} />
         <CategoryAdvices CategoryChangeData={this.CategoryChangeData}/>
       </section>
       <section className="device">
