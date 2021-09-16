@@ -6,10 +6,10 @@ class SearchAdvice extends Component{
    }
     render(){
         return (
-            <div className="">
-            <h3>Search</h3>
-        <input type="text" value={this.state.inputSearch} onChange={(e)=>this.setState({inputSearch:e.target.value})}/>
-        <button onClick={()=>this.props.handleInputSearch(this.state.inputSearch)}>Submit</button>
+            <div className="search-section">
+           
+        <input type="text" value={this.state.inputSearch} onChange={(e)=>this.setState({inputSearch:e.target.value})} placeholder="Search Input"/>
+        <button onClick={()=>this.props.handleInputSearch(this.state.inputSearch)} className="btn">Submit</button>
             </div>
         )
     }
