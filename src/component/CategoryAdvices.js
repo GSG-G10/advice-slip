@@ -11,7 +11,7 @@ class CategoryAdvices extends Component{
           
             {categories.map(category => {
                 return (
-                <label>{category} <input key={category.id}  type='radio' name='categories' value={category} onChange={this.props.CategoryChangeData} /> </label>
+                <label className='categoryLabel'>{category} <input key={category.id}  type='radio' name='categories' value={category} onChange={this.props.CategoryChangeData} /> </label>
                 )
             })}
             </form>
