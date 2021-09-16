@@ -1,6 +1,6 @@
 # Advice-Slip
 
-# live demo :https://redditrawand.herokuapp.com/
+# live demo :https://deploy-preview-17--competent-colden-eba545.netlify.app/
 
 # Berif Description
 The project offers advice on various fields, and the user can search for advice in any field he wants, whether about time, work or other things like that, and also sections have been added to the project to display special advice in each field only.
@@ -15,10 +15,10 @@ when you open the site you will see the devices card and you can search about an
 
 
 # Installation
-git clone https://github.com/GSG-G10/advice-slip.git
-cd advice-slip
-install all package
-npm start
+* git clone https://github.com/GSG-G10/advice-slip.git
+* cd advice-slip
+* install all package
+* npm start
 
  # Tech Stack
  * HTML
