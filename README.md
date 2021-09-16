@@ -1,8 +1,10 @@
 # Advice-Slip
 
-# live demo :https://deploy-preview-17--competent-colden-eba545.netlify.app/
+# [live demo](https://deploy-preview-17--competent-colden-eba545.netlify.app/)  [:rocket:](https://deploy-preview-17--competent-colden-eba545.netlify.app/)
 
-# Berif Description
+
+
+# Berif Description :bulb:
 The project offers advice on various fields, and the user can search for advice in any field he wants, whether about time, work or other things like that, and also sections have been added to the project to display special advice in each field only.
 
 # User Journey
@@ -15,6 +17,11 @@ when you open the site you will see the devices card and you can search about an
 
 
 
+## Team Member :busts_in_silhouette:
+* [Mohammed haroon](https://github.com/muhammadharoun)
+* [Rawand](https://github.com/rawand1998)
+
+
 # Installation
 * git clone https://github.com/GSG-G10/advice-slip.git
 * cd advice-slip
@@ -25,6 +32,6 @@ when you open the site you will see the devices card and you can search about an
  * HTML
  * CSS
  * JS
- * Netifly
  * React Js
+ * Netifly
 
